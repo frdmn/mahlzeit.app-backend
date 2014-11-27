@@ -8,8 +8,10 @@ bower_components
 
 # Assets and files that we'll actually compile
 assets/fonts
+assets/images
 assets/css/style.css
 assets/css/style.css.map
 assets/css/style.min.css
+assets/css/iCheck
 assets/js/build.js
 assets/js/modernizr.js
