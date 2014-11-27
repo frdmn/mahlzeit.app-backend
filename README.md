@@ -1,7 +1,7 @@
 mahlzeit-backend (WIP)
 ======================
 
-Backend for Mahlzeit.app - Order/booking Management for iWelt/Krick lunchbreak lunches, delivered by our local Butchery. Work in progress!
+Backend for Mahlzeit.app - Order/booking Management for iWelt/Krick lunchbreak lunches, delivered by our local Butchery (not kidding!). Work in progress!
 
 ### Requirements
 
