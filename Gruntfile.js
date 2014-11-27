@@ -62,7 +62,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: [
-                    '<%= dirs.bower %>/jquery/dist/jquery.js',
+                    '<%= dirs.bower %>/jquery/jquery.js',
                     '<%= dirs.bower %>/loglevel/dist/loglevel.js',
                     '<%= dirs.bower %>/admin-lte/js/jquery-ui-1.10.3.js',
                     '<%= dirs.bower %>/admin-lte/js/bootstrap.js',
@@ -153,7 +153,9 @@ module.exports = function(grunt) {
         copy: {
           main: {
             files: [
-              {expand: true, cwd: '<%= dirs.bower %>/admin-lte/fonts/', src: ['**'], dest: '<%= dirs.fonts %>'}
+              {expand: true, cwd: '<%= dirs.bower %>/admin-lte/fonts/', src: ['**'], dest: '<%= dirs.fonts %>'},
+              {expand: true, cwd: '<%= dirs.bower %>/admin-lte/img/', src: ['**'], dest: '<%= dirs.images %>'},
+              {expand: true, cwd: '<%= dirs.bower %>/admin-lte/css/iCheck/minimal/', src: ['**'], dest: '<%= dirs.css %>/iCheck/minimal'},
             ]
           }
         },
