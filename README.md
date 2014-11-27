@@ -16,7 +16,7 @@ Backend for Mahlzeit.app - Order/booking Management for iWelt/Krick lunchbreak l
   `git clone http://git.intern.iwelt.de/jonas.friedmann/mahlzeit-backend.git`
 2. Install all dependencies:  
   `npm install`
-3. Install web libraries: 
+3. Install web libraries:  
   `bower install`
 4. Run grunt task:  
   `grunt`
@@ -28,10 +28,14 @@ Backend for Mahlzeit.app - Order/booking Management for iWelt/Krick lunchbreak l
 * Bower
 * Grunt
 
-## Version
+### Todo
+
+Take a look into the the [TASKS.todo](TASKS.todo) PlainTask document for further information regarding todos and tasks.
+
+### Version
 
 1.0.0
 
-## License
+### License
 
 [WTFPL](LICENSE)
