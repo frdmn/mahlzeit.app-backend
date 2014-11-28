@@ -15,11 +15,12 @@
     "tests"
   ],
   "dependencies": {
-    "flatly-sb-admin": "*",
+    "jquery": "1.11",
+    "bootstrap-sass-official": "~3.2.0",
+    "modernizr": "~2.8.3",
     "loglevel": "~0.6.0"
   },
   "resolutions": {
-    "datatables": ">=1.9",
-    "jquery": ">= 1.2.6"
+    "jquery": "1.11"
   }
 }
