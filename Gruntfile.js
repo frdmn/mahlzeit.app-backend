@@ -128,12 +128,15 @@ module.exports = function(grunt) {
         // Copy
         copy: {
           main: {
-            files: [
-              {expand: true, cwd: '<%= dirs.bower %>/admin-lte/fonts/', src: ['**'], dest: '<%= dirs.fonts %>'},
-              {expand: true, cwd: '<%= dirs.bower %>/admin-lte/img/', src: ['**'], dest: '<%= dirs.images %>'},
-            ]
+            files: [],
           }
         },
+
+        // Clean
+        clean: [
+            "assets",
+            "bower_components",
+        ],
 
         // Watch
         watch: {
