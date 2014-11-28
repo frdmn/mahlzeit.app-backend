@@ -13,7 +13,7 @@ Backend for Mahlzeit.app - Order/booking Management for iWelt/Krick lunchbreak l
 ### Installation
 
 1. Clone the repository:  
-  `git clone http://git.intern.iwelt.de/jonas.friedmann/mahlzeit-backend.git`
+  `git clone https://github.com/frdmn/mahlzeit.app-backend.git`
 2. Install all dependencies:  
   `npm install`
 3. Install web libraries:  
