@@ -65,11 +65,6 @@ module.exports = function(grunt) {
                 src: [
                     '<%= dirs.bower %>/jquery/dist/jquery.js',
                     '<%= dirs.bower %>/bootstrap-sass-official/assets/javascripts/bootstrap.js',
-                    '<%= dirs.bower %>/handlebars/handlebars.js',
-                    '<%= dirs.bower %>/blockui/jquery.blockUI.js',
-                    '<%= dirs.bower %>/pouchdb/dist/pouchdb-nightly.js',
-                    '<%= dirs.bower %>/chosen/chosen.jquery.js',
-                    '<%= dirs.bower %>/pouchdb-all-dbs/dist/pouchdb.all-dbs.js',
                     '<%= dirs.bower %>/loglevel/dist/loglevel.js',
                     '<%= dirs.js %>/*.js',
                     '!<%= dirs.js %>/modernizr.js',
