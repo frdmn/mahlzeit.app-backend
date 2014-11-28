@@ -34,7 +34,7 @@ Take a look into the the [TASKS.todo](TASKS.todo) PlainTask document for further
 
 ### Version
 
-1.0.0
+0.0.1
 
 ### License
 
