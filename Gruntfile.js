@@ -130,8 +130,9 @@ module.exports = function(grunt) {
 
         // Clean
         clean: [
-            "assets",
-            "bower_components",
+            "assets/js/build.js",
+            "assets/css/style.css",
+            "assets/css/style.css.map"
         ],
 
         // Watch
