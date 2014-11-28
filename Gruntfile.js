@@ -16,7 +16,8 @@ module.exports = function(grunt) {
         sass: {
             dev: {
                 options: {
-                    style: 'expanded'
+                    style: 'expanded',
+                    loadPath: ''
                 },
                 files: {
                     '<%= dirs.css %>/style.css': '<%= dirs.css %>/style.scss'
@@ -24,7 +25,8 @@ module.exports = function(grunt) {
             },
             build: {
                 options: {
-                    style: 'compressed'
+                    style: 'compressed',
+                    loadPath: ''
                 },
                 files: {
                     '<%= dirs.css %>/style.css': '<%= dirs.css %>/style.scss'
@@ -48,7 +50,6 @@ module.exports = function(grunt) {
         connect: {
             server: {
                 options: {
-                    hostname: '0.0.0.0',
                     port: 9001,
                     base: ''
                 }
@@ -62,9 +63,16 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: [
-                    '<%= dirs.bower %>/jquery/jquery.js',
+                    '<%= dirs.bower %>/jquery/dist/jquery.js',
+                    '<%= dirs.bower %>/bootstrap-sass-official/assets/javascripts/bootstrap.js',
+                    '<%= dirs.bower %>/handlebars/handlebars.js',
+                    '<%= dirs.bower %>/blockui/jquery.blockUI.js',
+                    '<%= dirs.bower %>/pouchdb/dist/pouchdb-nightly.js',
+                    '<%= dirs.bower %>/chosen/chosen.jquery.js',
+                    '<%= dirs.bower %>/pouchdb-all-dbs/dist/pouchdb.all-dbs.js',
                     '<%= dirs.bower %>/loglevel/dist/loglevel.js',
                     '<%= dirs.js %>/*.js',
+                    '!<%= dirs.js %>/modernizr.js',
                     '!<%= dirs.js %>/build.js'
                 ],
                 dest: '<%= dirs.js %>/build.js',
@@ -79,6 +87,7 @@ module.exports = function(grunt) {
             all: [
                 'Gruntfile.js',
                 '<%= dirs.js %>/*.js',
+                '!<%= dirs.js %>/modernizr.js',
                 '!<%= dirs.js %>/build.js'
             ]
         },
@@ -97,7 +106,8 @@ module.exports = function(grunt) {
         uglify: {
             all: {
                 files: {
-                    '<%= dirs.js %>/build.js': ['<%= dirs.js %>/build.js']
+                    '<%= dirs.js %>/build.js': ['<%= dirs.js %>/build.js'],
+                    '<%= dirs.js %>/modernizr.js': ['<%= dirs.bower %>/modernizr/modernizr.js']
                 }
             }
         },
@@ -114,21 +124,12 @@ module.exports = function(grunt) {
             }
         },
 
-        // CSSmin
-        cssmin: {
-            combine: {
-                files: {
-                    '<%= dirs.css %>/style.min.css': [
-                        '<%= dirs.css %>/style.css'
-                    ]
-                }
-            }
-        },
-
         // Copy
         copy: {
           main: {
-            files: [],
+            files: [
+              {expand: true, cwd: '<%= dirs.bower %>/bootstrap-sass-official/assets/fonts/bootstrap/', src: ['**'], dest: '<%= dirs.fonts %>'},
+            ]
           }
         },
 
@@ -145,7 +146,7 @@ module.exports = function(grunt) {
             },
             sass: {
                 files: ['<%= dirs.css %>/*.scss'],
-                tasks: ['sass:dev', 'autoprefixer', 'cssmin']
+                tasks: ['sass:dev', 'autoprefixer']
             },
             images: {
                 files: ['<%= dirs.images %>/*.{png,jpg,gif}'],
@@ -162,9 +163,9 @@ module.exports = function(grunt) {
                     spawn: false
                 }
             }
-        }
+        },
     });
 
-    grunt.registerTask('default', ['sass:build', 'copy' , 'cssmin', 'autoprefixer', 'concat', 'uglify', 'imagemin']);
-    grunt.registerTask('dev', ['connect', 'watch']);
+    grunt.registerTask('default', ['copy', 'sass:build', 'autoprefixer', 'concat', 'uglify', 'imagemin']);
+    grunt.registerTask('dev', ['copy', 'connect', 'watch']);
 };
