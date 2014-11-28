@@ -64,21 +64,6 @@ module.exports = function(grunt) {
                 src: [
                     '<%= dirs.bower %>/jquery/jquery.js',
                     '<%= dirs.bower %>/loglevel/dist/loglevel.js',
-                    '<%= dirs.bower %>/admin-lte/js/jquery-ui-1.10.3.js',
-                    '<%= dirs.bower %>/admin-lte/js/bootstrap.js',
-                    '<%= dirs.bower %>/raphael/raphael.js',
-                    '<%= dirs.bower %>/admin-lte/js/plugins/morris/morris.js',
-                    '<%= dirs.bower %>/admin-lte/js/plugins/sparkline/jquery.sparkline.js',
-                    '<%= dirs.bower %>/admin-lte/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js',
-                    '<%= dirs.bower %>/admin-lte/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js',
-                    '<%= dirs.bower %>/admin-lte/js/plugins/fullcalendar/fullcalendar.js',
-                    '<%= dirs.bower %>/admin-lte/js/plugins/jqueryKnob/jquery.knob.js',
-                    '<%= dirs.bower %>/admin-lte/js/plugins/daterangepicker/daterangepicker.js',
-                    '<%= dirs.bower %>/admin-lte/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.js',
-                    '<%= dirs.bower %>/admin-lte/js/plugins/iCheck/icheck.js',
-                    '<%= dirs.bower %>/admin-lte/js/AdminLTE/app.js',
-                    '<%= dirs.bower %>/admin-lte/js/AdminLTE/dashboard.js',
-                    '<%= dirs.bower %>/admin-lte/js/AdminLTE/demo.js',
                     '<%= dirs.js %>/*.js',
                     '!<%= dirs.js %>/build.js'
                 ],
@@ -134,16 +119,7 @@ module.exports = function(grunt) {
             combine: {
                 files: {
                     '<%= dirs.css %>/style.min.css': [
-                        '<%= dirs.css %>/style.css',
-                        '<%= dirs.bower %>/admin-lte/css/bootstrap.css',
-                        '<%= dirs.bower %>/admin-lte/css/font-awesome.css',
-                        '<%= dirs.bower %>/admin-lte/css/ionicons.css',
-                        '<%= dirs.bower %>/admin-lte/css/morris/morris.css',
-                        '<%= dirs.bower %>/admin-lte/css/jvectormap/jquery-jvectormap-1.2.2.css',
-                        '<%= dirs.bower %>/admin-lte/css/fullcalendar/fullcalendar.css',
-                        '<%= dirs.bower %>/admin-lte/css/daterangepicker/daterangepicker-bs3.css',
-                        '<%= dirs.bower %>/admin-lte/css/bootstrap-wysihtml5/bootstrap3-wysihtml5.css',
-                        '<%= dirs.bower %>/admin-lte/css/AdminLTE.css',
+                        '<%= dirs.css %>/style.css'
                     ]
                 }
             }
@@ -155,7 +131,6 @@ module.exports = function(grunt) {
             files: [
               {expand: true, cwd: '<%= dirs.bower %>/admin-lte/fonts/', src: ['**'], dest: '<%= dirs.fonts %>'},
               {expand: true, cwd: '<%= dirs.bower %>/admin-lte/img/', src: ['**'], dest: '<%= dirs.images %>'},
-              {expand: true, cwd: '<%= dirs.bower %>/admin-lte/css/iCheck/minimal/', src: ['**'], dest: '<%= dirs.css %>/iCheck/minimal'},
             ]
           }
         },

@@ -15,9 +15,11 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "2.0.2",
-    "loglevel": "~0.6.0",
-    "admin-lte": "~1.2.1",
-    "raphael": "~2.1.2"
+    "flatly-sb-admin": "*",
+    "loglevel": "~0.6.0"
+  },
+  "resolutions": {
+    "datatables": ">=1.9",
+    "jquery": ">= 1.2.6"
   }
 }
