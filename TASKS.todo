@@ -1,10 +1,10 @@
 General:
   ✔ Repository base @done (14-11-27 12:29)
   ✔ Implement AdminLTE as Bower component, compile via GruntJS @done (14-11-27 16:31)
-  ☐ Strip unneccessary files and views
+  ✔ Strip unneccessary files and views  @done (15-01-15 21:01)
 
 Design:
-  ☐ Navigation?
+  ☐ Navigation? @started(15-01-15 21:01)
 
 Development:
   ☐ SQL design
