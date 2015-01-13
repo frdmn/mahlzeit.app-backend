@@ -66,6 +66,7 @@ module.exports = function(grunt) {
                     '<%= dirs.bower %>/jquery/dist/jquery.js',
                     '<%= dirs.bower %>/bootstrap-sass-official/assets/javascripts/bootstrap.js',
                     '<%= dirs.bower %>/loglevel/dist/loglevel.js',
+                    '<%= dirs.bower %>/bootstarp-datepicker/js/bootstarp-datepicker.js',
                     '<%= dirs.js %>/*.js',
                     '!<%= dirs.js %>/modernizr.js',
                     '!<%= dirs.js %>/build.js'
