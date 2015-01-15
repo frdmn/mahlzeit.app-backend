@@ -18,7 +18,7 @@
                 <ul class="sidebar-nav">
                   <li>
                     <a href="index.html">Dashboard</a>
-                    <a class="active">Tagesgerichte</a>
+                    <a href="todaysspecials_filled.html" class="active">Tagesgerichte</a>
                     <a href="orders.html">Bestellungen</a>
                   </li>
                 </ul>
@@ -32,54 +32,15 @@
                                 Tagesgerichte
                             </h1>
                             <div class="pull-right">
-                                <button type="button" class="btn btn-success">Hinzufügen</button>
+                                <a type="button" class="btn btn-success btn-dailysspecials-add">Hinzufügen</a>
                             </div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <table class="table">
-                                    <colgroup>
-                                        <col class="col-xs-6">
-                                        <col class="col-xs-2">
-                                        <col class="col-xs-2">
-                                        <col class="col-xs-2">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th>Gericht</th>
-                                            <th>Preis</th>
-                                            <th></th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Belegtes Brötchen</td>
-                                            <td>1,00 €</td>
-                                            <td><button type="button" class="btn btn-default btn-xs">Editieren</button></td>
-                                            <td><button type="button" class="btn btn-danger btn-xs">Löschen</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Schnitzel</td>
-                                            <td>3,90 €</td>
-                                            <td><button type="button" class="btn btn-default btn-xs">Editieren</button></td>
-                                            <td><button type="button" class="btn btn-danger btn-xs">Löschen</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Nudeln</td>
-                                            <td>3,30 €</td>
-                                            <td><button type="button" class="btn btn-default btn-xs">Editieren</button></td>
-                                            <td><button type="button" class="btn btn-danger btn-xs">Löschen</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Salat</td>
-                                            <td>2,00 €</td>
-                                            <td><button type="button" class="btn btn-default btn-xs">Editieren</button></td>
-                                            <td><button type="button" class="btn btn-danger btn-xs">Löschen</button></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="callout callout-warning" id="callout-inline-form-width">
+                                    <p>Für heute wurden noch keine Tagesgerichte hinzugefügt. Bitte dafür den "Hinzufügen" Button oben rechts nutzen.</p>
+                              </div>
                             </div>
                         </div>
                     </div>
