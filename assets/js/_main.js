@@ -29,7 +29,7 @@ $(window).bind("debouncedresize", function() {
 /* Function to draw chart */
 function drawChart() {
     window.m = Morris.Area({
-        element: 'area-example',
+        element: 'order-chart',
         data: [
             { y: '2015-01-10', a: 0 },
             { y: '2015-01-11', a: 0 },
