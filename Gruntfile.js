@@ -129,13 +129,6 @@ module.exports = function(grunt) {
           }
         },
 
-        // Clean
-        clean: [
-            "assets/js/build.js",
-            "assets/css/style.css",
-            "assets/css/style.css.map"
-        ],
-
         // Watch
         watch: {
             options: {
