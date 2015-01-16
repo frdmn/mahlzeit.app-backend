@@ -6,7 +6,7 @@ General:
   ☐ Import bootstrap-datepicker css via libsass import (https://github.com/sass/libsass/pull/754)
 
 Mockup:
-  ☐ "Dashboard"
+  ☐ "Dashboard" @started(15-01-16 07:45)
   ✔ "Dailys specials" @started(15-01-15 21:50)  @done (15-01-16 10:14) @lasted(12:24)
   ✔ "Orders" @started(15-01-16 07:13) @done (15-01-16 07:44) @lasted(0:31)
 
