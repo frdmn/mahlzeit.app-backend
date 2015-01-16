@@ -3,7 +3,6 @@ General:
   ✔ Implement Twitter Bootstrap as Bower component, compile via GruntJS @done (14-11-27 16:31)
   ✔ Strip unneccessary files and views  @done (15-01-15 21:01)
   ✔ Replace slow ruby sass gem with libsass @started(15-01-16 13:32)  @done (15-01-16 13:36) @lasted(0:04)
-  ☐ Import bootstrap-datepicker css via libsass import (https://github.com/sass/libsass/pull/754)
   ☐ Employee picker for manual orders via LDAP
 
 Mockup:
@@ -18,7 +17,7 @@ Mockup:
 
 Design:
   ☐ Navigation?
-  ☐ Implement datepicker
+  ☐ Implement datepicker @started(15-01-16 21:46)
   ☐ Implement morris graphs for dashboard
   ✔ English class/variable names instead of germans @started(15-01-16 20:57) @done (15-01-16 20:59) @lasted(0:02)
 

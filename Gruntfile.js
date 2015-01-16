@@ -127,6 +127,7 @@ module.exports = function(grunt) {
           main: {
             files: [
               {expand: true, cwd: '<%= dirs.bower %>/bootstrap-sass-official/assets/fonts/bootstrap/', src: ['**'], dest: '<%= dirs.fonts %>'},
+              {expand: true, cwd: '<%= dirs.bower %>/bootstrap-datepicker/css/', src: ['datepicker3.css'], dest: '<%= dirs.css %>', rename: function(dest, src) { return dest + '/_datepicker3.scss'; }},
             ]
           }
         },

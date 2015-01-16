@@ -9,6 +9,7 @@ bower_components
 # Assets and files that we'll actually compile
 assets/fonts
 assets/images
+assets/css/_datepicker3.scss
 assets/css/style.css
 assets/css/style.css.map
 assets/css/style.min.css
