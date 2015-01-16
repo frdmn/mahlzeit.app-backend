@@ -18,7 +18,7 @@ Mockup:
 Design:
   ☐ Navigation?
   ✔ Implement datepicker @started(15-01-16 21:46)  @done (15-01-16 23:20) @lasted(1:34)
-  ☐ Implement morris graphs for dashboard @started(15-01-16 23:26)
+  ✔ Implement morris graphs for dashboard @started(15-01-16 23:26)  @done (15-01-17 00:05) @lasted(0:39)
   ✔ English class/variable names instead of germans @started(15-01-16 20:57) @done (15-01-16 20:59) @lasted(0:02)
 
 Development:

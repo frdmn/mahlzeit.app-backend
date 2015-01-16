@@ -16,5 +16,37 @@ $(function() {
     }).datepicker('update', 'now');
 
     $('#bootstrap-datepicker').datepicker('update', 'now');
+
+    drawChart();
 });
+
+$(window).resize(function() {
+    //on window resize...
+    window.m.redraw();
+});
+
+function drawChart() {
+    window.m = Morris.Area({
+        element: 'area-example',
+        data: [
+            { y: '2015-01-10', a: 0 },
+            { y: '2015-01-11', a: 0 },
+            { y: '2015-01-12', a: 15 },
+            { y: '2015-01-13', a: 21 },
+            { y: '2015-01-14', a: 14 },
+            { y: '2015-01-15', a: 9 },
+            { y: '2015-01-16', a: 6 }
+        ],
+        xkey: 'y',
+        ykeys: ['a'],
+        labels: ['Bestellungen'],
+        xLabelFormat: function(d) {
+            return d.getDate()+'.'+(d.getMonth()+1)+'.'+d.getFullYear();
+        },
+        dateFormat: function(date) {
+            d = new Date(date);
+            return d.getDate()+'.'+(d.getMonth()+1)+'.'+d.getFullYear();
+        },
+    });
+}
 
