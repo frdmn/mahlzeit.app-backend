@@ -11,7 +11,7 @@ Mockup:
   ✔ "Dailys specials" @started(15-01-15 21:50)  @done (15-01-16 10:14) @lasted(12:24)
   ✔ "Orders" @started(15-01-16 07:13) @done (15-01-16 07:44) @lasted(0:31)
   ☐ "Add" button in orders view for manual orders
-  ☐ "Due payments" widget in dashboard
+  ✔ "Due payments" widget in dashboard @started(15-01-16 19:53) @done (15-01-16 20:00) @lasted(0:07)
 
 Design:
   ☐ Navigation? @started(15-01-15 21:01)
