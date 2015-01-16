@@ -65,10 +65,12 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: [
+                    '<%= dirs.bower %>/raphael/raphael.js',
                     '<%= dirs.bower %>/jquery/dist/jquery.js',
                     '<%= dirs.bower %>/bootstrap-sass-official/assets/javascripts/bootstrap.js',
                     '<%= dirs.bower %>/loglevel/dist/loglevel.js',
                     '<%= dirs.bower %>/bootstrap-datepicker/js/bootstrap-datepicker.js',
+                    '<%= dirs.bower %>/morrisjs/morris.js',
                     '<%= dirs.js %>/*.js',
                     '!<%= dirs.js %>/modernizr.js',
                     '!<%= dirs.js %>/build.js'
@@ -127,7 +129,8 @@ module.exports = function(grunt) {
           main: {
             files: [
               {expand: true, cwd: '<%= dirs.bower %>/bootstrap-sass-official/assets/fonts/bootstrap/', src: ['**'], dest: '<%= dirs.fonts %>'},
-              {expand: true, cwd: '<%= dirs.bower %>/bootstrap-datepicker/css/', src: ['datepicker3.css'], dest: '<%= dirs.css %>', rename: function(dest, src) { return dest + '/_datepicker3.scss'; }},
+              {expand: true, cwd: '<%= dirs.bower %>/bootstrap-datepicker/css/', src: ['datepicker3.css'], dest: '<%= dirs.css %>', rename: function(dest, src) { return dest + '/datepicker3.scss'; }},
+              {expand: true, cwd: '<%= dirs.bower %>/morrisjs/', src: ['morris.css'], dest: '<%= dirs.css %>', rename: function(dest, src) { return dest + '/morris.scss'; }},
             ]
           }
         },
