@@ -16,7 +16,7 @@ module.exports = function(grunt) {
         sass: {
             dev: {
                 options: {
-                    style: 'expanded',
+                    outputStyle: 'nested',
                     loadPath: '.',
                     sourceMap: true
                 },
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
             },
             build: {
                 options: {
-                    style: 'compressed',
+                    outputStyle: 'compressed',
                     loadPath: '.',
                     sourceMap: false
                 },
