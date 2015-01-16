@@ -81,10 +81,9 @@
     }
 }
 
-/* view - "dailys specials" */
+/* align "add" button in "todays specials" and "orders" views */
 
-// align "add" button
-.btn-dailysspecials-add {
+.btn-dailysspecials-add, .btn-orders-add {
     margin-top: 20px;
 }
 

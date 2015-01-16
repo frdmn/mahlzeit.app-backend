@@ -10,11 +10,13 @@ Mockup:
   ✔ "Dashboard" @started(15-01-16 07:45)  @done (15-01-16 07:56) @lasted(0:11)
   ✔ "Dailys specials" @started(15-01-15 21:50)  @done (15-01-16 10:14) @lasted(12:24)
   ✔ "Orders" @started(15-01-16 07:13) @done (15-01-16 07:44) @lasted(0:31)
-  ☐ "Add" button in orders view for manual orders
+  ✔ "Add" button in orders view for manual orders @started(15-01-16 20:04) @done (15-01-16 20:14) @lasted(0:10)
   ✔ "Due payments" widget in dashboard @started(15-01-16 19:53) @done (15-01-16 20:00) @lasted(0:07)
+  ☐ Manual action input in "orders" view to mark orders as payed/not payed
+  ☐ Views for "add order"/"delete order"
 
 Design:
-  ☐ Navigation? @started(15-01-15 21:01)
+  ☐ Navigation?
   ☐ Implement datepicker
   ☐ Implement morris graphs for dashboard
 
