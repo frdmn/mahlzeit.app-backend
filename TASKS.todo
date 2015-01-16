@@ -6,13 +6,14 @@ General:
   ☐ Import bootstrap-datepicker css via libsass import (https://github.com/sass/libsass/pull/754)
 
 Mockup:
-  ☐ "Dashboard" @started(15-01-16 07:45)
+  ✔ "Dashboard" @started(15-01-16 07:45)  @done (15-01-16 07:56) @lasted(0:11)
   ✔ "Dailys specials" @started(15-01-15 21:50)  @done (15-01-16 10:14) @lasted(12:24)
   ✔ "Orders" @started(15-01-16 07:13) @done (15-01-16 07:44) @lasted(0:31)
 
 Design:
   ☐ Navigation? @started(15-01-15 21:01)
   ☐ Implement datepicker
+  ☐ Implement morris graphs for dashboard
 
 Development:
   ☐ SQL design
