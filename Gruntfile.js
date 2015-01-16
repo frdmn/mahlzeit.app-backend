@@ -67,6 +67,8 @@ module.exports = function(grunt) {
                 src: [
                     '<%= dirs.bower %>/raphael/raphael.js',
                     '<%= dirs.bower %>/jquery/dist/jquery.js',
+                    '<%= dirs.bower %>/jquery-smartresize/jquery.debouncedresize.js',
+                    '<%= dirs.bower %>/jquery-smartresize/jquery.throttledresize.js',
                     '<%= dirs.bower %>/bootstrap-sass-official/assets/javascripts/bootstrap.js',
                     '<%= dirs.bower %>/loglevel/dist/loglevel.js',
                     '<%= dirs.bower %>/bootstrap-datepicker/js/bootstrap-datepicker.js',

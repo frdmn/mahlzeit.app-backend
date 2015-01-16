@@ -1,3 +1,4 @@
+/* jQuery function */
 $(function() {
     /* Sidebar toggle */
 
@@ -20,11 +21,12 @@ $(function() {
     drawChart();
 });
 
-$(window).resize(function() {
-    //on window resize...
+/* Redraw chart using jquery-smartresize on resize */
+$(window).bind("debouncedresize", function() {
     window.m.redraw();
 });
 
+/* Function to draw chart */
 function drawChart() {
     window.m = Morris.Area({
         element: 'area-example',
@@ -49,4 +51,3 @@ function drawChart() {
         },
     });
 }
-
