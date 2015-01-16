@@ -9,5 +9,12 @@ $(function() {
         // Write log
         log.info('[INFO] Sidebar toggled');
     });
+
+    $('#bootstrap-datepicker').datepicker({
+        "todayHighlight": true,
+        "endDate": 'now'
+    }).datepicker('update', 'now');
+
+    $('#bootstrap-datepicker').datepicker('update', 'now');
 });
 
