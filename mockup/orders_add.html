@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Mahlzeit.app - Bestellungen - Hinzufügen</title>
+        <!-- Include CSS -->
+        <link href="../assets/css/style.css" rel="stylesheet">
+        <script src="../assets/js/modernizr.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <h1>Mahlzeit.app</h1>
+                <ul class="sidebar-nav">
+                  <li>
+                    <a href="index.html">Dashboard</a>
+                    <a href="todaysspecials.html">Tagesgerichte</a>
+                    <a class="active">Bestellungen</a>
+                  </li>
+                </ul>
+            </div>
+            <!-- Page content -->
+            <div id="page-content-wrapper">
+                <div class="content-header">
+                    <div class="page-header">
+                        <h1 class="pull-left">
+                            Bestellungen <small>Hinzufügen</small>
+                        </h1>
+                        <div class="pull-right">
+                            <a type="button" class="btn btn-default btn-orders-back" href="orders.html">Zurück</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-body form-horizontal payment-form">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="besteller" class="col-sm-3 control-label">Besteller</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="besteller" name="besteller">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="gericht" class="col-sm-3 control-label">Gericht</label>
+                                            <div class="col-sm-9">
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="gericht" id="gericht1" value="Belegtes Brötchen" checked="">
+                                                        Belegtes Brötchen
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="gericht" id="gericht2" value="Schnitzel">
+                                                        Schnitzel
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="gericht" id="gericht3" value="Nudeln">
+                                                        Nudeln
+                                                    </label>
+                                                </div>
+                                                <div class="radio">
+                                                    <label>
+                                                        <input type="radio" name="gericht" id="gericht3" value="Salat">
+                                                        Salat
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="preis" class="col-sm-3 control-label">Preis</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="preis" name="preis" value="1,00" disabled>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="bezahlt" class="col-sm-3 control-label">Bezahlt?</label>
+                                            <div class="col-sm-9">
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="bezahlt" id="bezahlt1" value="Ja"> Ja
+                                                </label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="bezahlt" id="bezahlt2" value="Nein"> Nein
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-3"></div>
+                                            <div class="col-sm-9 text-right">
+                                                <a type="button" class="btn btn-primary btn-block" href="todaysspecials_filled.html">Hinzufügen</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Include JavaScript -->
+        <script src="../assets/js/build.js"></script>
+    </body>
+</html>

@@ -13,7 +13,7 @@ Mockup:
   ✔ "Add" button in orders view for manual orders @started(15-01-16 20:04) @done (15-01-16 20:14) @lasted(0:10)
   ✔ "Due payments" widget in dashboard @started(15-01-16 19:53) @done (15-01-16 20:00) @lasted(0:07)
   ☐ Manual action input in "orders" view to mark orders as payed/not payed
-  ☐ Views for "add order"/"delete order"
+  ✔ Views for "add order"/"delete order" @started(15-01-16 20:15) @done (15-01-16 20:51) @lasted(0:36)
 
 Design:
   ☐ Navigation?
