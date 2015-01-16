@@ -4,11 +4,14 @@ General:
   ✔ Strip unneccessary files and views  @done (15-01-15 21:01)
   ✔ Replace slow ruby sass gem with libsass @started(15-01-16 13:32)  @done (15-01-16 13:36) @lasted(0:04)
   ☐ Import bootstrap-datepicker css via libsass import (https://github.com/sass/libsass/pull/754)
+  ☐ Employee picker for manual orders via LDAP
 
 Mockup:
   ✔ "Dashboard" @started(15-01-16 07:45)  @done (15-01-16 07:56) @lasted(0:11)
   ✔ "Dailys specials" @started(15-01-15 21:50)  @done (15-01-16 10:14) @lasted(12:24)
   ✔ "Orders" @started(15-01-16 07:13) @done (15-01-16 07:44) @lasted(0:31)
+  ☐ "Add" button in orders view for manual orders
+  ☐ "Due payments" widget in dashboard
 
 Design:
   ☐ Navigation? @started(15-01-15 21:01)
