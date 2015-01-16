@@ -17,7 +17,8 @@ module.exports = function(grunt) {
             dev: {
                 options: {
                     style: 'expanded',
-                    loadPath: '.'
+                    loadPath: '.',
+                    sourceMap: true
                 },
                 files: {
                     '<%= dirs.css %>/style.css': '<%= dirs.css %>/style.scss'
@@ -26,7 +27,8 @@ module.exports = function(grunt) {
             build: {
                 options: {
                     style: 'compressed',
-                    loadPath: '.'
+                    loadPath: '.',
+                    sourceMap: false
                 },
                 files: {
                     '<%= dirs.css %>/style.css': '<%= dirs.css %>/style.scss'
