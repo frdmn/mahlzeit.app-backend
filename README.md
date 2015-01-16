@@ -7,8 +7,6 @@ Backend for Mahlzeit.app - Order/booking Management for iWelt/Krick lunchbreak l
 
 * Installed `npm`, `grunt` and `bower`:  
   `npm install -g grunt-cli bower`
-* Installed `sass` gem:  
-  `gem install sass`
 
 ### Installation
 
@@ -20,7 +18,7 @@ Backend for Mahlzeit.app - Order/booking Management for iWelt/Krick lunchbreak l
   `bower install`
 4. Run grunt task:  
   `grunt`
-5. Thats it. Open the `index.php`!
+5. Thats it. Open `mockup/index.html`!
 
 ### Dependencies
 
